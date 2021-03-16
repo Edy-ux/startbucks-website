@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle">
+            <!-- Circulo -->
+        </div>
+
+        <header>
+            <a href="#" class="logo"> <img src="./assets/logo.png"></a>
+            <ul>
+                <li><a href="#">Inico</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2> Não é só café<br> É <span>Starbucks</span></h2>
+                     
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat lacinia ultrices. Proin
+                    ullamcorper orci sed dignissim condimentum. Proin non placerat elit. Pellentesque interdum purus ut
+                    mi mollis, odo ac aliquam commodo </p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="assets/img1.png" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="./assets/thumb1.png" onclick="imgSlider('./assets/img1.png');changeBackground('#017143')"></li>
+            <li><img src="./assets/thumb2.png" onclick="imgSlider('./assets/img2.png');changeBackground('#eb7495')"></li>
+            <li><img src="./assets/thumb3.png" onclick="imgSlider('./assets/img3.png');changeBackground('#d752b1')"></li>
+        </ul>
+
+        <ul class="media-social">
+            <li><a href="#"><img src="./assets/facebook.png"></a></li>
+            <li><a href="#"><img src="./assets/twitter.png"></a></li>
+            <li><a href="#"><img src="./assets/instagram.png"></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything,color02) {
+            document.querySelector('.starbucks').src = anything
+            /* document.querySelector('.circle').style.background = color */
+        }
+
+        function changeBackground(color) {
+            const circle = document.querySelector('.circle')
+            circle.style.background = color
+        }
+    </script>
+</body>
+
+</html>
