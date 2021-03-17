@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,20 +9,30 @@
 </head>
 
 <body>
+
     <section>
+  
         <div class="circle">
             <!-- Circulo -->
         </div>
 
         <header>
-            <a href="#" class="logo"> <img src="./assets/logo.png"></a>
-            <ul>
+
+            <a href="#" class="logo"> <img src="./assets/logo.png"> </a>
+
+             <div class="toggle">
+
+             </div>
+            
+            <ul class="nav">
                 <li><a href="#">Inico</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">Novidades</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
+
         </header>
+
         <div class="content">
             <div class="textBox">
                 <h2> Não é só café<br> É <span>Starbucks</span></h2>
@@ -39,9 +49,9 @@
         </div>
 
         <ul class="thumb">
-            <li><img src="./assets/thumb1.png" onclick="imgSlider('./assets/img1.png');changeBackground('#017143')"></li>
-            <li><img src="./assets/thumb2.png" onclick="imgSlider('./assets/img2.png');changeBackground('#eb7495')"></li>
-            <li><img src="./assets/thumb3.png" onclick="imgSlider('./assets/img3.png');changeBackground('#d752b1')"></li>
+            <li><img src="./assets/thumb2.png" onclick="imgSlider('./assets/img2.png', '#eb7495')"></li>
+            <li><img src="./assets/thumb1.png" onclick="imgSlider('./assets/img1.png', '#017143')"></li>
+            <li><img src="./assets/thumb3.png" onclick="imgSlider('./assets/img3.png', '#d752b1')"></li>
         </ul>
 
         <ul class="media-social">
@@ -50,17 +60,41 @@
             <li><a href="#"><img src="./assets/instagram.png"></a></li>
         </ul>
 
+        <footer> 
+            <p> Desenvolvido by Ednei Lopes</p>
+                
+        </footer>
+
     </section>
-    <script type="text/javascript">
-        function imgSlider(anything,color02) {
+
+    
+
+    <script>
+
+
+
+
+        function imgSlider(anything,color) {
             document.querySelector('.starbucks').src = anything
-            /* document.querySelector('.circle').style.background = color */
+              document.querySelector('.circle').style.background = color 
         }
 
-        function changeBackground(color) {
-            const circle = document.querySelector('.circle')
-            circle.style.background = color
+
+        const toggleMenu = () =>{
+            const toggle = document.querySelector('.toggle')
+            const navigation = document.querySelector('.nav')
+
+               toggle.addEventListener('click', ()=> {
+                toggle.classList.toggle('active')
+                navigation.classList.toggle('active')   
+
+             })
+            
         }
+
+        toggleMenu()
+
+
     </script>
 </body>
 
