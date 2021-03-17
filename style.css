@@ -272,7 +272,7 @@ footer  {
         background-repeat: no-repeat;
         background-position: center;    
      } 
-
+     
       header ul.nav.active {
 
         position: fixed;
@@ -283,6 +283,7 @@ footer  {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         flex-direction: column;
         background:#017143;
         z-index: 10;
