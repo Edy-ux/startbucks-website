@@ -299,4 +299,8 @@ footer  {
         
      }
 
+     footer {
+         display: none;
+     }
+
     }
