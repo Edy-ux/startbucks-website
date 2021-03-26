@@ -1,7 +1,7 @@
 # startbucks-website
 Starbucks Landing Page  - HTML, css3 e JavaScript 
 
-<p><a href="https://github.com/Edy-ux/startbucks-website"> Acesse a Landing page no github page </a> </p>
+<p><a href="https://edy-ux.github.io/startbucks-website/"> Acesse a Landing aqui </a> </p>
 
 <img   src='assets/strabucks.png' >
 
